@@ -8,6 +8,8 @@ rooms = [
     {'id': 3, 'name': "Frontend Developers"},
 ]
 
+# This is a comment i added on the X1, commited and pushed to github
+
 def home(request):
     context = {'rooms': rooms}
     return render(request, 'base/home.html', context)
