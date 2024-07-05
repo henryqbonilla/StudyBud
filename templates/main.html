@@ -11,6 +11,15 @@
 <body>
     {% include 'navbar.html' %}
 
+    <!--if there are any messages, it will pop up here below navbar-->
+    {% if messages %}
+    <ul>
+        {% for message in messages %}
+            <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
     {% block content %}
 
     {% endblock %}
